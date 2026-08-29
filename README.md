@@ -1,16 +1,16 @@
-# 🛡️ Sentinel Scam Validator (SSV)
+# Sentinel Scam Validator (SSV)
 
 > **Real-time scam, phishing, and smishing validation assistant empowering digital citizens to identify deceptive communications before harm occurs.**
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Sentinel Scam Validator (SSV)** is an agile, security-focused web application designed to evaluate suspicious URLs, text messages (SMS), and email snippets. Utilizing multi-tier heuristics, domain reputation verification, and natural language pattern analysis, SSV translates complex cyber threat indicators into clear, non-technical risk scores and prescriptive next steps.
 
 ---
 
-## 🚀 MVP Core Features
+## MVP Core Features
 
 | Feature | Description |
 | :--- | :--- |
@@ -20,7 +20,7 @@
 
 ---
 
-## 📂 Project Documentation Structure
+## Project Documentation Structure
 
 All foundational architecture, specifications, and project management artifacts are located in the [`Docs/`](file:///C:/Users/yolanda/OneDrive/Desktop/Agile-Software-Development/Docs/) folder:
 
@@ -34,7 +34,20 @@ Agile-Software-Development/
     └── DATABASE_DESIGN.md                    <-- ER diagram, schema definitions, indexes, DDL migrations
 ```
 
-## 🏗️ High-Level System Architecture
+### Document Quick Links
+
+1. **[Project Charter](file:///C:/Users/yolanda/OneDrive/Desktop/Agile-Software-Development/Docs/PROJECT_CHARTER.md)**  
+   *High-level mission, problem statement, in/out of scope, KPIs, governance (RACI), and milestone timeline.*
+2. **[Requirements Specification](file:///C:/Users/yolanda/OneDrive/Desktop/Agile-Software-Development/Docs/REQUIREMENTS_SPECIFICATION.md)**  
+   *Complete functional specifications (FR-01 to FR-18), non-functional constraints (NFR-01 to NFR-10), persona models, and traceability matrix.*
+3. **[Acceptance Criteria](file:///C:/Users/yolanda/OneDrive/Desktop/Agile-Software-Development/Docs/ACCEPTANCE_CRITERIA.md)**  
+   *Gherkin BDD scenarios (`Given-When-Then`) covering URL phishing, smishing urgency, boundary conditions, and Definition of Done.*
+4. **[Database Design](file:///C:/Users/yolanda/OneDrive/Desktop/Agile-Software-Development/Docs/DATABASE_DESIGN.md)**  
+   *Relational entity models (PostgreSQL), data dictionary, PII masking rules, cache strategy, and full SQL DDL script.*
+
+---
+
+## High-Level System Architecture
 
 ```mermaid
 flowchart LR
@@ -63,7 +76,7 @@ flowchart LR
 
 ---
 
-## 🛠️ Technology Stack (Target MVP)
+## Technology Stack (Target MVP)
 
 * **Frontend:** React / Next.js, Tailwind CSS (Accessible WCAG 2.1 AA UI).
 * **Backend:** Node.js / TypeScript (Fastify/Express) or Python (FastAPI).
@@ -73,7 +86,7 @@ flowchart LR
 
 ---
 
-## 📅 Agile Delivery Roadmap
+## Agile Delivery Roadmap
 
 ```mermaid
 gantt
@@ -96,7 +109,7 @@ gantt
 
 ---
 
-## 🔒 Security & Privacy Notice
+## Security & Privacy Notice
 
 * **PII Redaction:** Phone numbers, credit cards, emails, and authentication tokens are masked prior to database persistence.
 * **Non-Execution of Untrusted Links:** The system inspects headers, DNS, and redirects statically without executing untrusted JavaScript or downloading external binaries.
